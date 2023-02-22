@@ -8,6 +8,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.TextView;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -28,10 +29,19 @@ public class ButtonPindah extends Fragment {
         final View rootView = inflater.inflate(R.layout.fragment_button_pindah, container, false);
         Button pindahButton = rootView.findViewById(R.id.button_fragment);
 
+        boolean isInDesc = false;
+
         pindahButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                TextView description = rootView.findViewById(R.id.Description);
 
+                if (isInDesc) {
+
+                }
+                else {
+                    
+                }
             }
         });
 
